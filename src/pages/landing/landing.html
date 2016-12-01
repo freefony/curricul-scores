@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="landing-page-jumbotron" padding>
+    <ion-buttons end>
+    <button ion-button color="secondary" (click)="gotoSignup()">
+      Sign up
+    </button>
+    <button ion-button color="secondary" (click)="gotoLogin()">
+      Login
+    </button>
+  </ion-buttons>
+    <h1 text-center>Curricul<span secondary><em>Alpha</em></span></h1>
+    <h2 light center text-center margin>Easy school administration tools</h2>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget risus nunc. Etiam euismod dolor ac tellus feugiat, non tempor ligula placerat. Aliquam vestibulum, lorem sed fringilla auctor, sapien lorem rhoncus libero, id ultrices arcu eros vel est. Nunc eu dui feugiat, consectetur dui nec, vulputate dolor. Duis vulputate imperdiet elit, dictum sagittis dui pretium sit amet.
+  </div>
+</ion-content>
